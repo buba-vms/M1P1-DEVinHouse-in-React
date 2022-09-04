@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6b8d5cc;
+  font-family: 'Raleway', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-center {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* Titulo do formulário */
+
+.title {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.title i {
+  font-size: 30px;
+  color: #f60074;
+}
+
+.title span {
+  font-size: 24px;
+  font-weight: 300;
+  color: #f60074;
+}
+
+.title hgroup {
+  text-align: center;
+}
+
+.title h5 {
+  font-size: 12px;
+}
+
+.title h3 {
+  font-size: 20px;
+}
+
+.title h5,
+.title h3 {
+  font-weight: 100;
+}
+/* formulario inputs */
+
+.formulario {
+  background: #1b0327;
+  text-align: center;
+  color: white;
+}
+
+.formulario form {
+  margin-top: 20px;
+}
+
+.input-style {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.input-style label,
+.input-style input {
+  display: block;
+}
+.input-style label {
+  text-align: left;
+  text-indent: 55px;
+}
+.input-style input,
+.input-style select {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 4px;
+  height: 22px;
+  border-radius: 9px;
+}
+
+.input-style textarea {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 4px;
+  border-radius: 9px;
+}
+
+.input-style span {
+  text-indent: 0px;
+  color: red;
+}
+
+.action-btns {
+  margin-top: 10px;
+  padding: 10px 0 30px 0;
+  text-align: center;
+}
+.btn {
+  width: 85px;
+  height: 25px;
+  margin: 0 5px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 2px;
+}
+
+.btn-limpar {
+  background: #b71a63;
+}
+
+.btn-salvar {
+  background: #16bdd9;
+}
+
+.btn-cancelar {
+  background-color: rgb(233, 110, 110);
+}
+
+.btn-editar {
+  background-color: rgb(147, 208, 235);
+}
+/* card display */
+.card-display {
+  background-color: rgb(231, 231, 235);
+}
+
+.card-display-dar {
+  background-color: black;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card h5 {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.card h5 b {
+  font-size: 12px;
+}
+/* navbar */
+/* estatisticas */
+.estatisticas {
+  display: flex;
+  gap: 10px;
+  padding-top: 15px;
+  margin: 0 10px;
+}
+
+.estatistica {
+  background-color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.estatistica h3 {
+  color: #f60074;
+}
+
+.estatistica h4 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* barra de pesquisa */
+
+.pesquisa {
+  margin-top: 5px;
+  padding: 12px 10px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.pesquisa i {
+  color: #f60074;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.pesquisa i:hover {
+  color: #1b0327;
+}
+
+#barra-pesquisa {
+  width: 390px;
+  border-radius: 5px;
+  height: 26px;
+}
+
+/* cards */
+
+.cards-center {
+  padding: 12px 15px;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  height: 600px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.card-data {
+  text-align: left;
+  margin-top: 10px;
+}
+.card-data p {
+  margin: 7px 0;
+}
+
+.hide-card {
+  visibility: hidden;
+  display: none;
+}
+
+.card-buttons {
+  text-align: end;
+}
+
+.card-buttons i {
+  margin: 0 3px;
+}
+
+.card-delete,
+.card-edit,
+.card-video {
+  cursor: pointer;
+}
+
+.card-delete:hover {
+  color: red;
+}
+.card-edit:hover {
+  color: green;
+}
+
+.card-video:hover {
+  color: blueviolet;
+}
+
+.dark {
+  background-color: #131217;
+  color: rgb(204, 202, 202);
+}
+
+.darker {
+  background-color: #09090b;
+}
+
+.darkerPurple {
+  background-color: #09000f;
+}
+
+.dark input {
+  border: #09090b 1px solid;
+}
+
+.toggle-dark-mode {
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 10px;
+  letter-spacing: 5px;
+  padding: 5px;
+  padding-top: 8px;
+  cursor: pointer;
+
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 1),
+    inset 0 8px 8px rgba(0, 0, 0, 1), inset 0 -4px 8px rgba(0, 0, 0, 1);
+  width: 40px;
+
+  border-radius: 20px;
+}
+
+.edit-mode-on {
+  color: rgb(246, 0, 116);
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.edit-mode-on h5 {
+  box-shadow: inset 0 0 5px rgb(246, 0, 116);
+  width: 50%;
+  margin: 0 auto;
+  font-weight: 400;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(119, 119, 119);
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(123, 123, 123, 0.555);
+  border-radius: 7px;
+}
