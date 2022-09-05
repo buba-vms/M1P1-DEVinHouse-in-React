@@ -6,7 +6,7 @@ const RotaPrincipal = () => {
     <BrowserRouter>
       <Routes>
         <Route path="*" element={<PageNotFound />} />
-        <Route path="home" element={<App />} />
+        <Route path="/" element={<App />} />
         <Route path="/" element={<Navigate replace to="home" />} />
       </Routes>
     </BrowserRouter>
