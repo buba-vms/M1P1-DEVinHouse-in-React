@@ -7,7 +7,6 @@ const RotaPrincipal = () => {
       <Routes>
         <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<App />} />
-        <Route path="/" element={<Navigate replace to="home" />} />
       </Routes>
     </BrowserRouter>
   );
