@@ -1,9 +1,10 @@
 import AppProvider from './contexts/appcontext';
-import RotaPrincipal from './components/routes/RotaPrincipal';
+
+import Home from './pages/Home';
 function App() {
   return (
     <AppProvider>
-      <RotaPrincipal />
+      <Home />
     </AppProvider>
   );
 }
