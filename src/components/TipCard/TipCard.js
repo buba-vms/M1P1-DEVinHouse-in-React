@@ -12,18 +12,20 @@ const TipCard = ({ tip }) => {
         const { dispatch } = value;
 
         const handleRemove = () => {
-          dispatch({
-            type: 'REMOVER_TIP',
-            payload: { id },
-          });
+          if (window.confirm(`deseja deletar o card ${titulo}?`)) {
+            dispatch({
+              type: 'REMOVER_TIP',
+              payload: { id },
+            });
 
-          dispatch({
-            type: 'IGUALAR_TIPS',
-          });
+            dispatch({
+              type: 'IGUALAR_TIPS',
+            });
 
-          dispatch({
-            type: 'DESLIGAR_EDIT_MODE',
-          });
+            dispatch({
+              type: 'DESLIGAR_EDIT_MODE',
+            });
+          }
         };
         const handleEdit = () => {
           dispatch({

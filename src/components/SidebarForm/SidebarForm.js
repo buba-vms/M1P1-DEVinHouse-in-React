@@ -40,7 +40,7 @@ const SidebarForm = ({ newTip, handleNewTip, handleTips, setNewTip }) => {
                 <input
                   type="text"
                   id="skill"
-                  minLength="4"
+                  minLength="3"
                   maxLength="16"
                   placeholder="ex: CSS"
                   required
